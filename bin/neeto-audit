@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'neeto_compliance'
+
+NeetoCompliance::Runner.new.process
