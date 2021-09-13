@@ -9,7 +9,6 @@ class String
   end
 end
   
-
 module NeetoCompliance
   class Error < StandardError; end
 
@@ -17,9 +16,11 @@ module NeetoCompliance
     def process
       verifiers = [WheelSyncVerifier]
 
-      verifiers.map do |verifier| 
+      results = verifiers.map do |verifier| 
         verifier.new.process
-      end.all?
+      end
+
+      results.all? ? exit(0) : exit(1)
     end
   end
 end
