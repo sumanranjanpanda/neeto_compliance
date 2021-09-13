@@ -5,11 +5,9 @@ module NeetoCompliance
     FILES = [
           ".editorconfig",
           ".eslintrc.js",
-          ".gitignore",
           ".nvmrc",
           ".prettierrc.js",
           ".rubocop.yml",
-          ".semaphore/semaphore.yml",
           ".vscode/extensions.json",
           ".vscode/settings.json"
     ]
