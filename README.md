@@ -10,6 +10,15 @@ Add this line to your application's Gemfile:
 gem 'neeto_compliance'
 ```
 
+Also add a step into the CI process:
+
+```yaml
+
+- name: Neeto Compliance
+  commands:
+    - bundle exec neeto-audit
+```
+
 And then execute:
 
     $ bundle install
