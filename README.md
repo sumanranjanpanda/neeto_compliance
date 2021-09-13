@@ -7,7 +7,7 @@ This gem would audit and check a repository for compliance with Neeto developmen
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'neeto_compliance'
+gem "neeto_compliance", git: "https://github.com/bigbinary/neeto_compliance"
 ```
 
 And then execute:
